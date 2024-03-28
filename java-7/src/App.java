@@ -1,17 +1,29 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Mahasiswa<String, Double>mhs = new Mahasiswa<String, Double>("Rafly", "JawaBarat", 1234567.0);
+        Mahasiswa<String, Integer> mahasiswa = new Mahasiswa<String, Integer>("Rafly", "JawaBarat", 123456);
+        mahasiswa.getInfo();
 
-        mhs.print();
+        System.out.println();
 
-        Libmath<Integer, Double>math = new Libmath<Integer, Double>(10, 20.0);
-        System.out.println("Hasil penjumlahan: " + math.add());
+        Libmath<Integer, Double> math1 = new Libmath<Integer, Double>(12, 12.0);
+        System.out.println("Hasil penjumlahan: " + math1.add());
 
-        Libmath<Double, Double>math2 = new Libmath<Double, Double>(10.0, 20.0);
-        System.out.println("Hasil pengurangan: " + math2.sub());
+        Libmath<Double, Double> math2 = new Libmath<Double, Double>(12.0, 4.0);
+        System.out.println("Hasil Pengurangan: " + math2.min());
 
-        Triangle.hitungLuas(10, 20);
-        System.out.print(Triangle.hitungKeliling(10, 20));
+        System.out.println();
 
+        Triangle.calculateLuas(10, 10);
+        System.out.println(Triangle.hitunganKeliling(5 ,10));
+        System.out.println();
+
+        Iteration.iterable();
+        Iteration.iterator();
+        Collections.addCollection();
+        Collections.removeCollection();
+        Collections.checkCollection();
+        Lists.list();
+        Sets.hashSet();
+        Sets.LinkedHashSet();
     }
 }

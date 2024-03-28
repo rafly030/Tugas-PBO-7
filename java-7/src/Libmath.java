@@ -1,6 +1,6 @@
 public class Libmath<A extends Number, B extends Number> {
-    A angka1;
-    B angka2;
+    private A angka1;
+    private B angka2;
 
     public Libmath(A angka1, B angka2) {
         this.angka1 = angka1;
@@ -16,7 +16,7 @@ public class Libmath<A extends Number, B extends Number> {
         return angka1.doubleValue() + angka2.doubleValue();
     }
 
-    public double sub() {
+    public double min() {
         return angka1.doubleValue() - angka2.doubleValue();
     }
 }

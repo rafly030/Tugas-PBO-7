@@ -1,18 +1,17 @@
-public class Mahasiswa<A,B> {
-    A name;
-    A alamat;
-    B phone;
+class Mahasiswa<T, U> {
+    private T name;
+    private T alamat;
+    private U phone;
 
-    public Mahasiswa(A name, A alamat, B phone) {
-        this.name =  name;
+    public Mahasiswa(T name, T alamat, U phone) {
+        this.name = name;
         this.alamat = alamat;
         this.phone = phone;
     }
 
-    public void print() {
-        System.out.println("Nama: " + name);
+    public void getInfo() {
+        System.out.println("Name: " + name);
         System.out.println("Alamat: " + alamat);
         System.out.println("Phone: " + phone);
     }
-    
 }
